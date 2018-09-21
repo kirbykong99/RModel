@@ -1,0 +1,3 @@
+//Find correlation, variance and covariance of matrices of multivariate sample with the selected macro-economical variables using cor() fnction.
+//Refer to the Longley example
+PPNRcl1 <- cor(PPNRnodate)
