@@ -1,0 +1,7 @@
+//Need to create PPNR data first.  Read the table.
+//Read.DIF
+PPNRdata <- read.DIF("C:/data/PPNRData.dif", header=FLASE, dec =".", transpose=TRUE)
+// Sarima forecat for 13 periods
+PPNRforecast <- astsa::sarima.for(log(PPPNRdata), 13, 0, 1, 1, 0, 1 1, 13)
+//Graph of the PPNR prediction
+PPNRforecast <- astsa::sarima.for(PPNRdata, 13, 0, 1, 1, 0, 1 1, 13)
